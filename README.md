@@ -21,8 +21,13 @@ length (_:xs) = 1 + length xs
 What it does:
 
 length [1,2,3]
+
 = 1 + length [2,3]
+
 = 1 + (1 + length [3])
+
 = 1 + (1 + (1 + length []))
+
 = 1 + (1 + (1 + 0))
+
 = 3
